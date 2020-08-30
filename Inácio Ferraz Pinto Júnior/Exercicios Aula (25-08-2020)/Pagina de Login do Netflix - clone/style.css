@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+
+.bg-img-netflix{
+    position: fixed;
+}
+
+.bg-img-netflix img {
+    filter: brightness(40%);
+}
+
+header a img {
+    position: relative;
+    margin: 2% 0 0 3%;
+    width: 13%;
+}

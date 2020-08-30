@@ -1,0 +1,74 @@
+body{
+    background: #fd746c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    justify-content: center;
+}
+body div{
+    width: 50%;
+}
+@media (max-width: 900px) {
+    body div{
+        width: 100%;
+    }
+  }
+
+
+  
+body div h1{
+    text-align: center;
+    color: seashell;
+}
+
+body div form{
+    justify-self: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ff9068;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+
+    }
+
+body div form > fieldset{
+    border: none;
+}
+
+.titulo-form{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+input[type=text], input[ type="password"], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
