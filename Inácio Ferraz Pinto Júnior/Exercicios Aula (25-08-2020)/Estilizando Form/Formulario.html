@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <div style="position: relative;
+    width: 100%;">
+        <div style="left: 50%;
+        position: absolute;
+        transform: translateX(-50%);">
+            <h1>Criar Conta</h1>
+
+            <form action="http://www.atdsistemas.com.br/web/formulario/" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend class="titulo-form">Informações Pessoais</legend>
+
+                    <label for="nome">Primeiro Nome:</label>
+                    <input type="text" name="nome" id="nome">
+
+                    <br><br>
+
+                    <label for="foto">Foto:</label>
+                    <input type="file" name="foto" id="foto">
+
+                    <br><br>
+
+                    <label>Sexo</label>
+                    <br>
+                    <input type="radio" id="feminino" name="sexo" value="feminino">
+                    <label for="feminino">Feminino</label><br>
+                    <input type="radio" id="masculno" name="sexo" value="masculno">
+                    <label for="masculno">Masculno</label><br>
+                    <input type="radio" id="NaD" name="sexo" value="NaD">
+                    <label for="NaD">Não Defnido</label>
+
+                    <br><br>
+
+                    <label for="formacao">Nivel de Formação Acâdemica Concluido: </label>
+                    <select name="formacao" id="formacao">
+                        <option value="nenhuma">Nenhuma Formação</option>
+                        <option value="medio">Ensino Medio</option>
+                        <option value="superior">Ensino Superior</option>
+                    </select>
+
+                    <br><br>
+
+                    <label>Quem Sou Eu?</label>
+                    <br>
+                    <textarea id="descricao" name="descricao" rows="4" cols="50">
+                </textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="titulo-form">Redes Sociais</legend>
+                    <label for="twitter">Twitter: </label>
+                    <input type="text" name="twitter" id="twitter">
+
+                    <br><br>
+
+                    <label for="instagram">Instagram: </label>
+                    <input type="text" name="instagram" id="instagram">
+
+                    <br><br>
+
+                    <label for="facebook">Facebook: </label>
+                    <input type="text" name="facebook" id="facebook">
+                </fieldset>
+
+                <fieldset>
+
+                    <legend class="titulo-form">Informações de Login</legend>
+
+                    <label for="email">Login: </label>
+                    <input type="text" name="email" id="email">
+
+                    <br><br>
+
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="senha" id="senha">
+
+                    <br><br>
+
+                    <input type="checkbox" id="lembrar" name="lembrar" input>
+                    <label for="lembrar">Lembrar-me</label>
+
+                </fieldset>
+                <br>
+                <button class="button"type="reset">Limpar Formulario</button>
+                <button class="button" type="submit">Enviar</button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

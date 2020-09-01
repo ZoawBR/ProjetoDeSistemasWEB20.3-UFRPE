@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Netflix</title>
 </head>
-<body>
-    
-    <div class="bg-img-netflix">
-        <img class="escurecer-bg" src="./img/bg-netflix.jpg" alt="imagem de background da netflix">
 
-    </div>
+<body class="bg-img-netflix">
 
-    <header class="cabecalho">
-        <a href="#">
-            <img src="./img/netflix-logo.png" alt="Logo Netflix">
-        </a>
+    <header>
+        <div>
+            <a href="#">
+                <img class="logo" src="img/netflix-logo.png" alt="" srcset="">
+            </a>
+        </div>
     </header>
-    
 
-    
+    <main>
+        <div class="background-login">
+            <div>
+                <h1>Entrar</h1>
+            </div>
 
+            <div class="div-form">
+                <form action="#">
+                    <input class="form-input" type="text" placeholder="Email ou Número de Telefone" required>
+                    <input class="form-input" type="text" placeholder="Senha" required>
+                    <input class="button-entrar" type="button" value="Entrar">
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p1 class="text-config">
+            Dúvidas? Ligue 0800-761-4631 <br><br>
+        </p1>
+        <a href="https://help.netflix.com/legal/giftterms" class="text-config">
+            Termos dos cartões pré - pagos
+        </a>
+        <a href="https://help.netflix.com/legal/termsofuse" class="text-config">
+            Termos de Uso
+        </a>
+        <a href="https://help.netflix.com/legal/privacy" class="text-config">
+            Declaração de privacidade <br><br><br>
+        </a>
+        <select tabindex="1" class="selector-config">
+            <option>Português</option>
+            <option>English</option>
+        </select>
+    </footer>
 
 
 </body>
+
 </html>
