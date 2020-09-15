@@ -45,9 +45,7 @@ function mostrarRequisicaoParaCliente() {
         erro.innerHTML = ""
     } else {
         if (dadosCidade.ERRO == 404) {
-            erro.innerHTML = "CEP Inválido"
-        } else if (dadosCidade.ERRO == 400) {
-            erro.innerHTML = "CEP Não Existe"
+            erro.innerHTML = "CEP Não Foi Encontrado"
         }
         cep.innerText = ""
         estado.innerText = ""
@@ -58,5 +56,10 @@ function mostrarRequisicaoParaCliente() {
 }
 
 btnPesquisar.onclick = function(e) {
-    enviarRequisicao();
+    var entrada = fieldEntrada.value
+    if (typeof entrada == String || entrada.length < 8 || entrada.length > 8) {
+        erro.innerHTML = "CEP Inválido: Verificar se ha apenas numeros e se o tamanho está correto"
+    } else {
+        enviarRequisicao();
+    }
 }
