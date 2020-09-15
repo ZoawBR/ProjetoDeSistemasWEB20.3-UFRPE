@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/CronometroStyle.css">
+    <title>Cronometro Regressivo</title>
+</head>
+
+<body>
+    <div id="cronometro">
+        <h1>CRONÔMETRO REGRESSIVO</h1>
+        <input type="text" id="entrada-tempo" placeholder="Tempo em Minutos. Ex.: 3h = 180min">
+        <h2 id="temporizador">
+            <span id="hora">00</span> :
+            <span id="minuto">00</span> :
+            <span id="segundo">00</span>
+        </h2>
+        <button type="button" class="btn-style" id="btn-iniciar">Iniciar</button>
+        <button type="button" class="btn-style" id="btn-parar" disabled>Parar</button>
+    </div>
+</body>
+
+<script src="./js/Cronometro.js"></script>
+
+</html>

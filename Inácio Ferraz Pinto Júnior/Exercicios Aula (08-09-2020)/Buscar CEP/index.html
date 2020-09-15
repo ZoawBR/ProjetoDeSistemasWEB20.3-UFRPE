@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/BusqueCidade.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <title>BusqueCidade</title>
+</head>
+
+<body>
+    <div id="principal">
+        <h1>BusqueCidade</h1>
+        <input type="text" name="CEP" id="cep-entrada" placeholder="Digite o CEP..."><br>
+        <h3 id="erro"></h3>
+        <span><button type="button" id="btn-pesquisar">Pesquisar</button></span>
+        <div id="div-table">
+            <table id="info-cidade">
+                <thead>
+                    <tr style="text-align: center;">
+                        <td>CEP</td>
+                        <td>Estado</td>
+                        <td>Cidade</td>
+                        <td>Enderço</td>
+                        <td style="border-right: none;">Distrito</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td id="cep"></td>
+                        <td id="estado"></td>
+                        <td id="cidade"></td>
+                        <td id="endereco"></td>
+                        <td id="distrito" style="border-right: none;"></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</body>
+
+<script src="./js/BusqueCidade.js"></script>
+
+</html>

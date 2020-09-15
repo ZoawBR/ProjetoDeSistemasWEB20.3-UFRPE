@@ -1,0 +1,109 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background: #FF512F;
+    background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
+    background: linear-gradient(to right, #DD2476, #FF512F);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 4.0em;
+    margin-top: 1%;
+}
+
+#principal {
+    text-align: center;
+    width: 100%;
+}
+
+#div-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-cidade {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    text-align: center;
+    background: white;
+    border-radius: 25% 0 25% 0;
+    padding: 2%;
+    margin-top: 5%;
+    width: 90%;
+    -webkit-box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.37);
+}
+
+thead,
+tbody {
+    text-align: center;
+}
+
+#cep-entrada {
+    font-family: 'Lobster', cursive;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2.4em;
+    height: 50px;
+    width: 40%;
+    -webkit-box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.37);
+}
+
+#btn-pesquisar {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+    width: 10%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 2%;
+    outline: none;
+    -webkit-box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.37);
+}
+
+#btn-pesquisar:hover {
+    cursor: pointer;
+}
+
+#btn-pesquisar:active {
+    background-color: #40140B;
+    color: white;
+}
+
+@media(max-width: 750px) {
+    #cep-entrada {
+        width: 90%;
+    }
+    #btn-pesquisar {
+        width: 100px;
+    }
+}
+
+#erro {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+    color: red;
+    background: hsla(0, 0%, 100%, 1);
+    background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+    background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+    background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#FFFFFF", GradientType=1);
+}
