@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Epilogue-variable';
+    src: url('../font/Epilogue-VariableFont_wght.ttf');
+}
+
+* {
+    font-family: 'Epilogue-variable', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th {
+    background: #ca3f18;
+    color: white;
+}
+
+thead>tr>th {
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    width: auto;
+    padding: 10px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#responsividade-table {
+    overflow-x: auto;
+}
+
+.config-radio {
+    width: 4%;
+}
+
+#form-os {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#servico {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+}
+
+#buttonProduto,
+#buttonServico {
+    display: block;
+    color: rgb(0, 0, 0);
+    border: 1px rgb(84, 255, 58) solid;
+    background: rgb(76, 235, 67);
+    width: 50%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10%;
+    font-size: 1.7em;
+}

@@ -1,0 +1,10 @@
+{
+    "name": "pinto/gerenciador-mvc",
+    "authors": [
+        {
+            "name": "Inácio Ferraz",
+            "email": "zoawbrc@gmail.com"
+        }
+    ],
+    "require": {}
+}

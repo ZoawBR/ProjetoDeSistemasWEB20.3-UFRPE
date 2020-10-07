@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Epilogue-variable';
+    src: url('../font/Epilogue-VariableFont_wght.ttf');
+}
+
+.setores-formulario {
+    margin: 20px 0 40px 0;
+    color: #ddd;
+}
+
+h1 {
+    font-family: 'Epilogue-variable', sans-serif;
+    font-size: 2.4em;
+}
+
+.div-form {
+    width: 70%;
+}
+
+label {
+    font-family: 'Epilogue-variable', sans-serif;
+    position: static;
+    width: 100%;
+    font-size: 1em;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: 'Epilogue-variable', sans-serif;
+    font-size: 1.1em;
+    margin: 0 0 15px 0;
+}
+
+span {
+    color: red;
+    font-size: 1.2em;
+}
+
+#button-buscar-cep {
+    width: 100%;
+    font-family: 'Epilogue-variable', sans-serif;
+    padding: 12px;
+    margin-bottom: 5px;
+    margin: 20px 0 15px 0;
+    border: none;
+    border-radius: 10px;
+    border: 1px rgb(85, 73, 255) solid;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background: yellow;
+}
+
+#button-buscar-cep:hover {
+    color: white;
+    border: 1px yellow solid;
+    background: rgb(85, 73, 255);
+}
+
+fieldset {
+    border: none;
+}
+
+.div-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+}
+
+.div-form-2 {
+    margin-left: auto;
+}
+
+.div-form-1 {
+    margin-right: auto;
+}
+
+#btn-cadastrar {
+    outline: none;
+    height: 50px;
+    border: none;
+    font-size: 1.6em;
+    cursor: pointer;
+    width: 30%;
+    color: rgb(255, 255, 255);
+    background: #0aff01;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#btn-cadastrar:hover {
+    background: rgb(13, 99, 10);
+    transition: 0.5s;
+}
+
+#btn-cancelar {
+    outline: none;
+    height: 50px;
+    border: none;
+    font-size: 1.6em;
+    cursor: pointer;
+    width: 30%;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#btn-cancelar:hover {
+    transition: 0.5s;
+    background: rgb(99, 10, 10);
+}
+
+@media(max-width: 860px) {
+    #btn-cancelar,
+    #btn-cadastrar {
+        width: 100%;
+    }
+    .div-form {
+        grid-template-columns: 100%;
+    }
+}

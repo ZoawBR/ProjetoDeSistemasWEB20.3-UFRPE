@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Epilogue-variable';
+    src: url('../font/Epilogue-VariableFont_wght.ttf');
+}
+
+* {
+    font-family: 'Epilogue-variable', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th {
+    background: #ca3f18;
+    color: white;
+}
+
+thead>tr>th {
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    width: auto;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+#responsividade-table {
+    overflow-x: auto;
+}
